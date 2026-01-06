@@ -1,8 +1,5 @@
-import { Marker, Popup } from 'react-leaflet';
+import { Marker, Popup } from "react-leaflet";
 
-/**
- * Reusable station marker component for map
- */
 const StationMarker = ({ station }) => {
   if (!station.latitude || !station.longitude) {
     return null;

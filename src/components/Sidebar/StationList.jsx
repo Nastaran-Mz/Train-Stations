@@ -1,8 +1,5 @@
-import StationCard from './StationCard';
+import StationCard from "./StationCard";
 
-/**
- * Station list component with scrollable container
- */
 const StationList = ({ stations, selectedStation, onStationClick }) => {
   if (stations.length === 0) {
     return (
@@ -10,7 +7,9 @@ const StationList = ({ stations, selectedStation, onStationClick }) => {
         <div className="text-center p-8">
           <span className="text-6xl mb-4 block">🔍</span>
           <p className="text-gray-500 font-medium">No stations found</p>
-          <p className="text-gray-400 text-sm mt-2">Try selecting a different city</p>
+          <p className="text-gray-400 text-sm mt-2">
+            Try selecting a different city
+          </p>
         </div>
       </div>
     );

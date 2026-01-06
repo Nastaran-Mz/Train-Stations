@@ -1,11 +1,8 @@
-import { MapContainer, TileLayer } from 'react-leaflet';
-import { MAP_CONFIG } from '../../constants/mapConfig';
-import MapController from './MapController';
-import StationMarker from './StationMarker';
+import { MapContainer, TileLayer } from "react-leaflet";
+import { MAP_CONFIG } from "../../constants/mapConfig";
+import MapController from "./MapController";
+import StationMarker from "./StationMarker";
 
-/**
- * Main map component with all stations
- */
 const Map = ({ stations, selectedStation }) => {
   return (
     <div className="flex-1 relative">
@@ -21,9 +18,9 @@ const Map = ({ stations, selectedStation }) => {
         />
 
         {stations.map((station, index) => (
-          <StationMarker 
-            key={`${station.name}-${station.city}-${index}`} 
-            station={station} 
+          <StationMarker
+            key={`${station.name}-${station.city}-${index}`}
+            station={station}
           />
         ))}
 

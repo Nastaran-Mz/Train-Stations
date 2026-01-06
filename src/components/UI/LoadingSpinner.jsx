@@ -1,6 +1,4 @@
-/**
- * Reusable loading spinner component
- */
+
 const LoadingSpinner = ({ message = 'Loading...' }) => {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-50">
